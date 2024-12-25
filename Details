@@ -1,0 +1,31 @@
+We will use following features;
+
+step - tells about the unit of time
+type -	type of transaction done
+amount -	the total amount of transaction
+nameOrg	- account that starts the transaction 
+oldbalanceOrg -	Balance of the account of sender before transaction
+newbalanceOrg -	Balance of the account of sender after transaction
+nameDest	- account that receives the transaction
+oldbalanceDest -	Balance of the account of receiver before transaction
+newbalanceDest	- Balance of the account of receiver after transaction
+isFraud -	The value to be predicted i.e. 0 or 1
+
+The libraries used are : 
+
+Pandas:-  This library helps to load the data frame in a 2D array format and has multiple functions to perform analysis tasks in one go.
+Seaborn/Matplotlib:- For data visualization.
+Numpy:- Numpy arrays are very fast and can perform large computations in a very short time.
+
+Data Preprocessing:-
+This step includes the following;
+1. Encoding of Type column
+2. Dropping irrelevant columns like nameOrig, nameDest
+3. Data Splitting
+
+Model Training:-
+As the prediction is a classification problem so the models we will be using are;
+1. LogisticRegression :  It predicts that the probability of a given data belongs to the particular category or not.
+2. XGBClassifier : It refers to Gradient Boosted decision trees. In this algorithm, decision trees are created in sequential form and weights are assigned to all the independent variables which are then fed into the decision tree which predicts results.
+3. SVC : SVC is used to find a hyperplane in an N-dimensional space that distinctly classifies the data points. Then it gives the output according the most nearby element.
+4. RandomForestClassifier : Random forest classifier creates a set of decision trees from a randomly selected subset of the training set. Then, it collects the votes from different decision trees to decide the final prediction.
